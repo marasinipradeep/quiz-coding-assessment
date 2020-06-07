@@ -82,3 +82,18 @@ header{
     color: #fff;
     cursor: pointer;
   } 
+
+
+  .endPage{
+
+    padding: 50px;
+    text-align: center;
+  }
+  input{
+    font-size: 30px;
+
+  }
+  h3{
+      display: inline-block;
+      font-size: 35px;
+  }

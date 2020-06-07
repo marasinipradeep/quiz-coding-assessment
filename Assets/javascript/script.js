@@ -73,7 +73,7 @@ let questions = [
   },
 
   {
-    id: 2,
+    id: 5,
     question: "How do you create a function in JavaScript ?",
     answer: "function myFunction()",
     options: [
@@ -125,19 +125,19 @@ function stopTimer() {
 
 
 var question_count = 0;
+var correct_answer = 0;
 
 function showQuestions(count) {
 
   questionEl.textContent = questions[count].question
-
+  optionEl.textContent =""
   for (i = 0; i < questions[count].options.length; i++) {
     var li = document.createElement("li");
+    
     li.setAttribute("class", "option")
     li.setAttribute("data-index", i)
     li.textContent = questions[count].options[i];
     optionEl.appendChild(li);
-
-
   }
 
   keepActive()
@@ -174,6 +174,8 @@ optionEl.addEventListener("click", function (event) {
     if (questions[question_count].options[index] == questions[question_count].answer) {
       console.log("your point before loop :" + questions[0].options[index]);
       resultEl.textContent = "Correct answer"
+      correct_answer++
+      localStorage.setItem("correct_answer", correct_answer)
      
       }
     else{
@@ -185,7 +187,12 @@ optionEl.addEventListener("click", function (event) {
     console.log("No options selected")
   }
 
+  if(questions[question_count].id===5){
+    openSummaryPage();
+  }
+
   question_count++
+  console.log("Question count"+questions[question_count].id)
   showQuestions(question_count);
 
 })
