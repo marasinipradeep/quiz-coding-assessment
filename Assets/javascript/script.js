@@ -1,16 +1,27 @@
 
+/*Starts with clicking the play button */
+var playButton = document.querySelector("#playButton")
+
 /* Getting top header elements*/
 var headerEl = document.querySelector("#header")
 var welcomeEl = document.querySelector("#welcome-message")
 var timerDisplay = document.querySelector("#timer")
 
 
-/* Getting jumbo box  elements*/
+/* Getting jumbo box  elements consist of questions and options*/
 var jumbboxEl = document.querySelector("#jumbobox")
 var questionEl = document.querySelector("#question")
-var optionEl = document.querySelector("#option")
+var optionEl = document.querySelector("#optionel")
 
-var playButton = document.querySelector("#playButton")
+
+/* Getting elements to display result status*/
+var resultEl = document.querySelector("#result")
+
+
+
+
+
+
 
 
 let questions = [
@@ -122,12 +133,10 @@ function showQuestions(count) {
   for (i = 0; i < questions[count].options.length; i++) {
     var li = document.createElement("li");
     li.setAttribute("class", "option")
-    // li.id = questions[0].options.length;
-    li.textContent = questions[0].options[i];
+    li.setAttribute("data-index", i)
+    li.textContent = questions[count].options[i];
     optionEl.appendChild(li);
 
-    var userAnwer = questions[0].options[i]
-    console.log(li.selectedIndex)
 
   }
 
@@ -149,20 +158,37 @@ function keepActive() {
     };
   }
 
-  // let user_answer = document.querySelector("li.option.active").innerHTML;
-  //  console.log("your point before loop :" + user_answer);
- // if (user_answer == questions[question_count].answer) {
-
-    //  // sessionStorage.setItem("points",points);
-   // console.log("your point before loop :" + user_answer);
- // }
-
-//  if(question_count == questions.length-1){
-//   location.href = "end.html";
-// }
-
-
 }
+
+optionEl.addEventListener("click", function (event) {
+
+  console.log("inside check answer")
+  var element = event.target;
+
+  if (element.matches("li") === true) {
+
+    var index = element.getAttribute("data-index");
+    console.log("data index is :" +index);
+    console.log("option is :" + questions[question_count].options[index]);
+
+    if (questions[question_count].options[index] == questions[question_count].answer) {
+      console.log("your point before loop :" + questions[0].options[index]);
+      resultEl.textContent = "Correct answer"
+     
+      }
+    else{
+      resultEl.textContent = "Wrong answer"
+    }
+
+  }
+  else {
+    console.log("No options selected")
+  }
+
+  question_count++
+  showQuestions(question_count);
+
+})
 
 
 
