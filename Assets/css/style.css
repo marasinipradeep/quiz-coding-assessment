@@ -1,0 +1,59 @@
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+body{
+    background:	#ADD8E6;
+    position: relative;
+    padding-bottom: 150px;
+    min-height: 100vh;
+   }
+
+header{
+    
+    background: skyblue;
+    height: 150px;
+   font-size: 40px;
+    padding: 20px;
+    display: none;
+    
+}
+
+
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+
+
+.jumbotron {
+    padding: 20px;
+    margin: 50px;
+    max-width: 100%;
+    display: none;
+}
+
+
+.result{
+    padding: 20px;
+    margin: 50px;
+    max-width: 100%;
+    font-size: 22px;
+    color: red;
+    display: none;
+
+}
+
+#playButton{
+    position: relative;
+    top: 100px;
+    left: 100px;
+    
+}
