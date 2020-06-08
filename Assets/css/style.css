@@ -1,74 +1,72 @@
 
 
-*{
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-    
-}
-
+*{box-sizing: border-box;padding: 0px;margin: 0px;}
 body{
-    background:	#ADD8E6;
+    background:#ADD8E6;
+    /* position: relative;
+    padding-bottom: 200px;
+     min-height: 100vh; */
+     }
+
+
+#wrapper{
     position: relative;
-    padding-bottom: 150px;
-    min-height: 100vh;
-   }
-
-header{
-    
-    background: skyblue;
-    height: 150px;
-   font-size: 40px;
-    padding: 20px;
-    display: none;
-    
-}
-
-
-.float-left{
-    float: left;
-}
-.float-right{
-    float: right;
-}
-
-
-.jumbotron {
-    padding: 20px;
-    margin: 50px;
-    max-width: 100%;
-    display: none;
-}
-
-
-.result{
-    padding: 20px;
-    margin: 50px;
-    max-width: 100%;
-    font-size: 22px;
-    color: red;
-    display: none;
-
+    top: 350px;
+    border: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 #playButton{
-    position: relative;
-    top: 100px;
-    left: 100px;
+    height: 60px;
+    width: 300px;
+    font-size: 50px;
+    border-radius: 100px;
+}
+
+header{
+    background: skyblue;
+    font-size: 40px;
+    padding: 20px;
+    display: none;
+    text-align: center;
+}
+
+/* .float-left{float: left;}
+.float-right{float: right;} */
+
+
+.jumbotron {
+    /* position: relative;
+    top: 150px; */
+    padding: 20px;
+    margin:50px;
+    /* max-width: 100%;
+    height: 500px; */
+    display: none;
     
+}
+h2{
+    /* position: absolute; */
+    text-align: center;
+   
 }
 
 
 
 .option {
+    /* position: absolute;
+    top: 100px; */
     display: block;
-    width: 200px;
-    background-color: #fff;
-    margin-bottom: 10px;
-    padding: 15px 20px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 10px;
     border-radius: 100px;
-    border: 2px solid transparent;
-    transition: 0.4s all;
+    border: 1px solid transparent;
+    /* transition: 0.4s all; */
+    text-align: center;
   }
   .option:hover {
     cursor: pointer;
@@ -77,11 +75,23 @@ header{
     color: #341f97;
   }
 
+#result{
+     /* position: absolute;
+    bottom: 0px;  */
+    margin-left: 50px;
+    font-size: 28px;
+    color:maroon;
+    /* display: none; */
+
+}
+
+
+/* 
    .option.active{
     background-color: darkorange;
     color: #fff;
     cursor: pointer;
-  } 
+  }  */
 
 
   .endPage{

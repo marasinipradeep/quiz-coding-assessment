@@ -12,30 +12,46 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Link to font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Link to External stylesheet-->
     <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
 
 <body>
     <main class="container-fluid">
 
+        <!-- Start of heading part which shows text and timer -->
         <header class="row" id="header">
-            <div class="col-md-6 float-left" id="welcome-message"></div>
-            <div class="float-right" id="timer"></div>
+            <div class="col-md-6 " id="welcome-message"></div>
+            <div class="col-md-6 " id="timer"></div>
         </header>
 
-        <div class="row jumbotron" id="jumbobox">
-            <h1 for="" id="question"></h1>
-            <ol id="optionel"></ol>
+        <!-- Start of Quiz section -->
+        <div class="jumbotron" id="jumbobox">
+
+            <!-- Start of Questions -->
+            <h2 class="row" for="" id="question"></h2>
+
+            <!-- Start of Options -->
+            <div class="row" id="optionel"></div>
         </div>
+        <!-- End of quiz question answer -->
+
+
+        <!-- Start of Result status -->
         <div class="row">
             <div id="result"></div>
-            <div>
-                <button id="playButton">PLAY</button>
-            </div>
         </div>
-
     </main>
 
+    <!-- Inital screen start button to start quiz -->
+    <div id="wrapper">
+        <button class="fa fa-play" id="playButton">Start</button>
+    </div>
+
+    <!-- Linking to javascript file  -->
     <script src="./Assets/javascript/script.js"></script>
 
 </body>
