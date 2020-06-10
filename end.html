@@ -18,8 +18,18 @@
 <body>
     <main class="container-fluid">
     <div class="row endPage">
-        <form action="" id="playerName"><input placeholder="Enter your name" id="yourName"></input></form>
-            <span><h3 id="total_score"></h3></span>
+        <label id="total_score"></label>
+
+        <form class="row" action="" id="playerName">
+            <label for="">Initials:</label>
+            <input  placeholder=" Your name " id="yourName"></input>
+        </form>
+
+        <div class="row" id="wrapperButton">
+            <button class="option" id="backButton">Back</button>
+            <button class ="option" id="clearButton">Clear high score</button>
+        </div>
+          
         </div>
   
 </main>

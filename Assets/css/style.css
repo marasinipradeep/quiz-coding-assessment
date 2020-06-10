@@ -1,110 +1,51 @@
 
-
+/* Intializing basics for all part*/
 *{box-sizing: border-box;padding: 0px;margin: 0px;}
-body{
-    background:#ADD8E6;
-    /* position: relative;
-    padding-bottom: 200px;
-     min-height: 100vh; */
-     }
+body{background:#ADD8E6;font-size: 30px;}
 
+.initialPage{margin-top: 100px;text-align: center;}
 
-#wrapper{
-    position: relative;
-    top: 350px;
-    border: 2px solid transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-}
+p{font-family: 'Poly',cursive, Arial, sans-serif;}
 
-#playButton{
-    height: 60px;
-    width: 300px;
-    font-size: 50px;
-    border-radius: 100px;
-}
+/*setting color and display properites for timer and view score button*/
+header{background: #87CEEB;padding: 10px;display: none;}
+.jumbotron {position: relative;margin:20px;height: 500px; display: none;}
+.float_right{float: right;}
 
-header{
-    background: skyblue;
-    font-size: 40px;
-    padding: 20px;
-    display: none;
-    text-align: center;
-}
-
-/* .float-left{float: left;}
-.float-right{float: right;} */
-
-
-.jumbotron {
-    position: relative;
-    padding: 20px;
-    margin:50px;
-     max-width: 100%;
-    height: 600px; 
-    display: none;
-    
-}
+/*Styling for Questions*/
 .questionTitle{
      position: absolute;
-     top: 0px;
+     top: 10px;
+     max-width:100%;
+    font-size: 32px;
+    font-weight: bolder;
     text-align: center;
-    font-size: 30px;
-   
-}
-
-
-
-.option {
-    /* position: absolute;
-    top: 100px; */
-    display: block;
-    background-color: #ffffff;
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 100px;
-    border: 1px solid transparent;
-    /* transition: 0.4s all; */
-    text-align: center;
-  }
-  .option:hover {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.1); 
-    border: 2px solid #341f97;
+    font-family: 'Poly',cursive, Arial, sans-serif;
     color: #341f97;
-  }
-
-#result{
-     /* position: absolute;
-    bottom: 0px;  */
-    margin-left: 50px;
-    font-size: 28px;
-    color:maroon;
-    /* display: none; */
-
 }
 
+/*Styling for Options*/
+.option {
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid ;
+    text-align: center;
+    font-family: 'Poly',cursive, Arial, sans-serif;
+  }
+  .option:hover {background-color: rgba(255, 255, 255, 0.1);border: 4px solid #341f97;color: #341f97;} 
 
-/* 
-   .option.active{
-    background-color: darkorange;
-    color: #fff;
-    cursor: pointer;
-  }  */
+  /*Styling for results*/
+#result{margin-left: 50px;font-size: 28px;color:maroon;}
 
 
   .endPage{
-
-    padding: 50px;
+    margin-top: 200px;
+    padding: 10px;
+    font-size: 28px;
+    color: #341f97;
     text-align: center;
   }
-  input{
-    font-size: 30px;
 
-  }
-  h3{
-      display: inline-block;
-      font-size: 35px;
-  }
+  label{margin-top: 20px;margin-bottom: 20px;}
+  button{margin: 10px;}

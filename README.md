@@ -28,9 +28,7 @@ This is an timed code quiz with multiple-choice questions that asks the series o
 -Open the file with suitable code editor (For examplle:-Visual Studio code, Sublime Text, Atom etc).
 -You can view live demo clicking on link above.
 
-## Screenshots of final outputs
+## Demo  of Quiz code 
 
-
-
-![alt](Assets/images/)
+![demo for coding assessment](Assets/images/demoCodeQuiz.gif)
 
