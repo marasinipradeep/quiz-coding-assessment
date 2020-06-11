@@ -8,12 +8,10 @@ var headerEl = document.querySelector("#header")
 var welcomeEl = document.querySelector("#welcome-message")
 var timerDisplay = document.querySelector("#timer")
 
-
 /* Getting jumbotron box  elements consist of questions and options*/
 var jumbboxEl = document.querySelector("#jumbobox")
 var questionEl = document.querySelector("#question")
 var optionEl = document.querySelector("#optionel")
-
 
 /* Getting elements to display result status*/
 var resultEl = document.querySelector("#result")
@@ -24,7 +22,6 @@ var startingMinutes = 2;
 var time = startingMinutes * 60;
 
 init();
-
 
 /*Created the collections of Objects for series of questions */
 var questionOne = {
@@ -112,11 +109,10 @@ function onPlayClicked() {
   showQuestions(arrayOfQuestions, question_count)
 }
 
+/*On View high score button clicked */
 function onViewHIghcoreClicked() {
   openSummaryPage();
-
 }
-
 
 /* Getting Quiz questions here */
 function showQuestions(arrayOfQuestions, question_count) {
@@ -127,7 +123,6 @@ function showQuestions(arrayOfQuestions, question_count) {
   questionEl.appendChild(questionDiv);
   showOptions(question_count);
 }
-
 
 /*Getting Diffrent 4 options for user to select */
 function showOptions(question_count) {
@@ -165,7 +160,6 @@ function stopTimer() {
   openSummaryPage();
 }
 
-
 optionEl.addEventListener("click", function (event) {
   event.preventDefault();
   var element = event.target;
@@ -199,6 +193,6 @@ function openSummaryPage() {
   location.href = "end.html";
 }
 
-/*Different click events are handlers difined here */
+/*Different click events handlers difined here */
 playButton.addEventListener("click", onPlayClicked)
 welcomeEl.addEventListener("click", onViewHIghcoreClicked)

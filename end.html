@@ -16,26 +16,27 @@
 </head>
 
 <body>
+    <!-- Start of end page -->
     <main class="container-fluid">
-    <div class="row endPage">
-        <label id="total_score"></label>
+        <div class="row endPage">
 
-        <form class="row" action="" id="playerName">
-            <label for="">Initials:</label>
-            <input  placeholder=" Your name " id="yourName"></input>
-        </form>
+            <!-- Total score -->
+            <label id="total_score"></label>
 
-        <div class="row" id="wrapperButton">
-            <button class="option" id="backButton">Back</button>
-            <button class ="option" id="clearButton">Clear high score</button>
+            <!-- Initaials for player name input -->
+            <form class="row" action="" id="playerName">
+                <label for="">Initials:</label>
+                <input placeholder=" Your name " id="yourName"></input>
+            </form>
+
+            <!-- Two buttons starting game again and clearing local storage -->
+            <div class="row" id="wrapperButton">
+                <button class="option" id="backButton">Back</button>
+                <button class="option" id="clearButton">Clear high score</button>
+            </div>
         </div>
-          
-        </div>
-  
-</main>
-
+    </main>
     <script src="./Assets/javascript/end.js"></script>
-
 </body>
 
 </html>
